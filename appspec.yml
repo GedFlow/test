@@ -1,7 +1,14 @@
 version: 0.0
 os: linux
+files:
+  - source: /
+    destination: /home/ubuntu/
+    overwrite: yes
+permissions:
+  - object: /home/ubuntu/
+    owner: ubuntu
 hooks:
-  BeforeInstall:
+  deployment-lifecycle-event-name:
     - location: /script.sh
       timeout: 900
       runas: root
