@@ -6,7 +6,8 @@ files:
     overwrite: yes
 permissions:
   - object: /home/ubuntu/
-    owner: root
+    owner: ubuntu
+    group: ubuntu
 hooks:
   deployment-lifecycle-event-name:
     - location: /script.sh
