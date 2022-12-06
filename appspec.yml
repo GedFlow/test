@@ -10,6 +10,6 @@ permissions:
     group: ubuntu
 hooks:
   deployment-lifecycle-event-name:
-    - location: qrqr/script.sh
+    - location: /script.sh
       timeout: 900
       runas: root
